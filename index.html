@@ -1,3 +1,180 @@
-<htm>
-<h1><center> WELCOME Rahim</center></h1>
+<!DOCTYPE html>
+<html>
+<meta charset= "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+		#box {
+			width: 820px;
+			height:auto;
+			border-width: 2px;
+			border-style:solid;
+			border-color:red;
+			background: #CCC;
+		}
+		#box1 {
+			width: 900px;
+			height:auto;
+			border-width: 2px;
+			border-style:solid;
+			border-color:green;
+			background:lightblue;
+			
+		}
+
+
+body {
+	background-image: url(" ");
+        background-repeat:no-repeat;
+       background-size:cover;
+} 
+
+
+
+table, td, th {
+  border:0px solid black;
+}
+</style>
+
+
+<head></head>
+<body><center><h2><i><font color ="blue">Pension Order</font><br></h2></i><a href="https://www.google.com/intl/ml/inputtools/try/">For Malayalam</a><hr color ="green">
+<div class="row" style="margin-top:5px;">
+<div class="col-md-4"></div>
+<div class="col-md-6">
+
+<table class="table table-bordered differentTable">
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>ഫയൽ നമ്പർ :</td><td><input type="text" id="fn1"  placeholder="ഫയൽ നമ്പർ" name="number"/></td>
+</tr>
+
+
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>പെൻഷൻ ഫയൽ നമ്പർ :</td><td><input type="text" id="pfn"  placeholder="ഫയൽ നമ്പർ" name="number"/></td>
+</tr>
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>താലൂക്കിന്റെ പേര്   :</td><td><input type="text" id="thn"  placeholder="താലൂക്കിന്റെ പേര് " name="number"/></td>
+</tr>
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>തഹസിൽദാർ (ഭൂരേഖ) :</td><td><input type="text" id="tn"  placeholder="പേര്" name="number"/></td>
+</tr>
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>വില്ലേജ്    :</td><td><input type="text" id="v"  placeholder="വില്ലേജ്  പേര് " name="number"/></td>
+</tr>
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>വി ഒ  റിപ്പോർട്ട് നമ്പർ തീയതി:</td><td><input type="text" id="vor"  placeholder="വി ഒ  റിപ്പോർട്ട് നമ്പർ തീയതി" name="number"/></td>
+</tr>
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>പെൻഷൻ തരം:</td><td><input type="text" id="pt"  placeholder="CP,TB Etc" name="number"/></td>
+</tr>
+
+
+
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>അപേക്ഷകന്റെ പേര്  :</td><td><input type="text" id="an"  placeholder="ശ്രീ / ശ്രീമതി ----" name="number"/></td>
+</tr>
+
+
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>മേൽവിലാസം  :</td><td><input type="text" id="ad"  placeholder="പൂർണ്ണ മേൽവിലാസം" name="number"/></td>
+</tr>
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>പെൻഷൻ കാലയളവ്:</td><td><input type="text" id="pp"  placeholder="പെൻഷൻ കാലയളവ്" name="number"/></td>
+</tr>
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>ഉത്തരവ് തീയതി   :</td><td><input type="text" id="dt"  placeholder="ഉത്തരവ് തീയതി" name="number"/></td>
+</tr>
+
+
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>വാർഷിക വരുമാനം    :</td><td><input type="text" id="ai"  placeholder="വാർഷിക വരുമാനം " name="number"/></td>
+</tr>
+
+
+<tr style="background-color:#EDC00C;color:blue;font-size:18px;">
+
+<td>മുൻ പെൻഷൻ വിവരം    :</td><td><input type="text" id="opd"  placeholder="ഉണ്ടെങ്കിൽ  മാത്രം " name="number"/></td>
+</tr>
+
+
+</table>
+<hr color ="green">
+<font color="red">മുൻ പെൻഷൻ വിവരം ഉണ്ടെങ്കിൽ മാത്രം  /അപേക്ഷകന് ----പ്രകാരം- -(തീയതി )--വരെ പെൻഷൻ അനുവദിച്ചിട്ടുള്ളതാണ് </font>
+</div>
+
+
+<br><input type="button" onclick="getarea()" value="സമർപ്പിക്കുക "><br></center>
+ 
+
+<script>
+function refreshPage(){
+    window.location.reload();
+} 
+function printContent(el){
+var restorepage = document.body.innerHTML;
+var printcontent = document.getElementById(el).innerHTML;
+document.body.innerHTML = printcontent;
+window.print();
+document.body.innerHTML = printcontent;
+}
+function getarea(){
+var a = document.getElementById("fn1").value;
+var b = document.getElementById("vor").value;
+var c = document.getElementById("pfn").value;
+var d = document.getElementById("pp").value;
+var e = document.getElementById("pt").value;
+var f = document.getElementById("an").value;
+var g = document.getElementById("tn").value;
+var h = document.getElementById("ad").value;
+var i = document.getElementById("dt").value;
+var j = document.getElementById("ai").value;
+var k = document.getElementById("v").value;
+var l = document.getElementById("opd").value;
+var m = document.getElementById("thn").value;
+
+document.getElementById("output").innerHTML="<table style=width:100%;><br><br><tr><th><h3>"+m+" തഹസിൽദാർ (ഭൂരേഖ) യുടെ നടപടിക്രമം<br>(ഹാജർ "+g+") </h3></th></tr></table><table style=width:100%;><tr><td  align=right width=30%><left>F<SUB>2</SUB>-"+a+" കെ . ഡിസ് </left></td><td width=50%><center></center></td><td width=40%><left>തീയതി "+i+"</left></td></tr></table><table style=width:100%; ><tr height=45px><td  align=right width=20%><left></left></td><td width=60%><center></center></td><td width=20%><center></center></td></tr><table style=width:100%;> <tr><td  align=right width=25%><left><b>വിഷയം:- </left></td><td  align=justify width=75%>"+e+"രോഗികൾക്കുള്ള  പെൻഷൻ അനുവദിച്ചു  ഉത്തരവാകുന്നത് സംബന്ധിച്ച് </td></tr></table><table style=width:100%;><tr height=20px><td  align=right width=20%><left></left></td><td width=60%><center></center></td><td width=20%><center></center></td> </tr></table><table style=width:100%;> <tr> <td  align=right width=25%><left><b>സൂചന:- </left></td><td  align=left width=75%>1)14.08.1963 ലെ ജി ഒ (പി )626/63 എച് എൽ ഡി നമ്പർ ഉത്തരവ് </td></tr></table><table style=width:100%;><tr> <td  align=right width=25%><left><b> </left></td><td  align=left width=75%>2)09.01.1976 ലെ ജി ഒ (പി ) 394/76 എച് എൽ ഡി നമ്പർ ഉത്തരവ്</td></tr></table><table style=width:100%; >  <tr>  <td  align=right width=25%><left><b> </left></td><td  align=left width=75%>3)08.10.1984 ലെ ജി ഒ (പി ) 3240/84 എച് എൽ ഡി നമ്പർ ഉത്തരവ്</td> </tr></table><table style=width:100%;> <tr> <td  align=right width=25%><left><b> </left></td><td  align=left width=75%>4)ശ്രീ /ശ്രീമതി  "+f+"  ന്റെ അപേക്ഷ </td></tr></table><table style=width:100%;><tr><td  align=right width=25%><left><b> </left></td><td  align=left width=75%>5)"+k+"  വില്ലേജാഫീസറുടെ  "+b+"  നമ്പർ റിപ്പോർട്ട് </td> </tr></table><table style=width:100%;><tr><td  align=right width=20%><left>"+c+" </left></td><td  align=left width=80%></td> </tr></table><table style=width:100%;><tr><td  align=justify width=5%><left> </left></td><td  align=justify width=95%>&nbsp;&nbsp;&nbsp;&nbsp;ശ്രീ /ശ്രീമതി "+f+","+h+" ,"+k+" സമർപ്പിച്ച അപേക്ഷയും മെഡിക്കൽ സർട്ടിഫിക്കറ്റും ആയതിന്മേൽ  " +k+"  വില്ലജ് ഓഫീസറുടെ  റിപ്പോർട്ടും പരിഗണിച്ചതിൽ അപേക്ഷകൻ / അപേക്ഷകയെക്കെ "+d+" എന്ന കാലയളവ് വരെ  "+e+" രോഗികൾക്കുള്ള പെൻഷൻ അനുവദിച്ചു  ഇതിനാൽ ഉത്തരവാകുന്നു </td> </tr></table><table style=width:100%;><tr><td  align=right width=5%><left> </left></td><td  align=justify width=95%>സർക്കാരിൽ  നിന്നും അലോട്ട്മെന്റ്  കിട്ടുന്ന  മുറയ്ക്ക്  പെൻഷൻ തുക വിതരണം  ചെയ്യുന്നതായിരിക്കും </td> </tr></table></table><table style=width:100%;><tr><td  align=right width=5%><left> </left></td><td  align=justify width=95%>&nbsp;&nbsp; </td> </tr></table></table><table style=width:100%;><tr><td  align=right width=5%><left> </left></td><td  align=justify width=95%>&nbsp;&nbsp;</td> </tr></table><table style=width:100%;><tr><td  align=right width=70%><left> </left></td><td  align=justify width=30%>&nbsp;&nbsp;തഹസിൽദാർ (ഭൂരേഖ)</td> </tr></table><table style=width:100%;><tr><td  align=right width=70%><left> </left></td><td  align=justify width=30%>&nbsp;&nbsp;</td> </tr></table><table style=width:100%;><tr><td  align=right width=15%><left>പകർപ്പ് :-  </left></td><td  align=justify width=85%>അപേക്ഷ കക്ഷി </td> </tr></table><table style=width:100%;><tr><td  align=right width=15%><left> </left></td><td  align=justify width=85%>വില്ലേജാഫീസർ </td> </tr></table><table style=width:100%;><tr><td  align=right width=15%><left> </left></td><td  align=justify width=85%>കരുതൽ ഫയൽ </td> </tr></table>"
+
+
+
+
+
+
+//document.write("<br><br><center>Area ="+c+"m<sup>2</sup>");
+}
+
+</script>
+</head>
+
+<center>
+
+<div id="box">
+<p id ="output"></p> 
+
+<button onclick ="printContent('output')">printContent</button></center></div><BR>
+
+
+<CENTER><font color ="blue">Rahim M-9961570858</CENTER></font>
+</body>
 </html>
+
